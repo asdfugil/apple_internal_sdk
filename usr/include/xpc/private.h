@@ -457,6 +457,23 @@ XPC_EXPORT
 void
 _xpc_string_set_value(xpc_object_t xstring, const char* new_string);
 
+XPC_EXPORT
+int64_t
+xpc_user_sessions_enabled(void) __API_AVAILABLE(ios(16.0));
+
+XPC_EXPORT
+uint64_t
+xpc_user_sessions_get_foreground_uid(uint64_t) __API_AVAILABLE(ios(16.0));
+
+XPC_EXPORT
+uint64_t
+xpc_connection_set_target_user_session_uid(xpc_connection_t, uid_t) __API_AVAILABLE(ios(16.0));
+
+XPC_EXPORT
+char*
+xpc_connection_copy_invalidation_reason(xpc_connection_t) __API_AVAILABLE(ios(16.0));
+
+
 __END_DECLS
 //XPC_ASSUME_NONNULL_END
 
