@@ -16,6 +16,12 @@ typedef struct conninfo {
 	void				*ci_aux_data;		/* auxiliary data */
 } conninfo_t;
 
+typedef enum {
+    nw_resolver_status_invalid = 0,
+    nw_resolver_status_in_progress = 1,
+    nw_resolver_status_complete = 2,
+} nw_resolver_status_t;
+
 __BEGIN_DECLS
 
 extern int copyassocids(int, sae_associd_t **, uint32_t *);
