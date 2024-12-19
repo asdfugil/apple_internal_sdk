@@ -22,6 +22,10 @@ typedef enum {
     nw_resolver_status_complete = 2,
 } nw_resolver_status_t;
 
+NW_OBJECT_DECL(nw_path_evaluator);
+NW_OBJECT_DECL(nw_resolver);
+NW_OBJECT_DECL(nw_array);
+
 __BEGIN_DECLS
 
 extern int copyassocids(int, sae_associd_t **, uint32_t *);
