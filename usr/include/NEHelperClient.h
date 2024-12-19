@@ -5,6 +5,8 @@
 #include <xpc/xpc.h>
 #include <objc/NSObject.h>
 
+#define NE_HAS_EMANLE_VPN
+
 typedef struct NEHelperClient NEHelperClient;
 
 typedef struct NEHelperDelegate NEHelperDelegate;
