@@ -25,10 +25,10 @@
 __BEGIN_DECLS
 
 bool _os_feature_enabled_impl(const char *domain, const char *feature)
-__OSX_AVAILABLE_STARTING(__MAC_11_0, __IPHONE_14_0);
+API_AVAILABLE(macos(11.0), ios(14.0), tvos(14.0), watchos(7.0), bridgeos(5.0), xros(1.0));
 
 bool _os_feature_enabled_simple_impl(const char *domain, const char *feature, bool status)
-__OSX_AVAILABLE_STARTING(__MAC_11_0, __IPHONE_14_0);
+API_AVAILABLE(macos(11.0), ios(14.0), tvos(14.0), watchos(7.0), bridgeos(5.0), xros(1.0));
 
 __END_DECLS
 
