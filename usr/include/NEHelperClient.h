@@ -1,6 +1,8 @@
 #ifndef _NEHELPERCLIENT_H
 #define _NEHELPERCLIENT_H
 
+#include <uuid/uuid.h>
+#include <stdbool.h>
 #include <stdint.h>
 #include <xpc/xpc.h>
 #include <objc/NSObject.h>
@@ -28,5 +30,7 @@ NEHelperDelegate *NEHelperClient_delegate(NEHelperClient *self);
 xpc_object_t NEHelperClient_connection(NEHelperClient *self);
 
 NEHelperClient *NEHelperClient_initWithConnection(NEHelperClient *self, xpc_object_t arg1, NEHelperDelegate *arg2, int arg3);
+
+int NEHelperVPNSetEnabled(uuid_t, bool);
 
 #endif
